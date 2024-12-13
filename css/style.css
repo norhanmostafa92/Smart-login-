@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+    background-color: #24353F;
+    color: #fff;
+}
+.card{
+    background-color: #24353F;
+    box-shadow: 0px 0px 20px 0px black;
+}
+.card h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+}
+input{
+    background-color: transparent !important;
+    color:#fff !important ;
+}
+input::placeholder{
+    color:rgb(182, 187, 187) !important;
+}
+.btn-outline-info:hover{
+    color: white;
+    text-decoration: none;
+}
+span{
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

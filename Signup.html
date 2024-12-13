@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="./free-user-login-icon.png" type="image/png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="mt-5 pb-5">
+      <div class="container">
+        <div class="card pb-5 rounded-0 w-75 m-auto">
+          <div
+            class="row justify-content-center align-items-center gy-2 text-center ms-5 me-5"
+          >
+            <div class="col-12">
+              <h2 class="mt-5 mb-3 text-info text-opacity-75">
+                Smart Login System
+              </h2>
+              <input
+                type="text"
+                class="form-control mt-3 name"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                oninput="signUpChecker(this)"
+                type="email"
+                class="form-control mt-3 new_email"
+                id="uEmail"
+                placeholder="Enter Your Email"
+                required
+              />
+              <input
+                oninput="signUpChecker(this)"
+                type="password"
+                class="form-control mt-3 new_pass"
+                id="uPass"
+                placeholder="Enter Your password"
+                required
+              />
+              <p class="text-danger mt-4 mb-0 d-none" id="log_mas">
+                All inputs is required
+              </p>
+            </div>
+            <div class="row">
+              <a
+                href="#"
+                class="btn btn-outline-info mt-4"
+                id="signup"
+                onclick="dataCollected()"
+              >
+                Sign Up
+              </a>
+            </div>
+            <span class="mb-5"
+              >You have an account? <a href="index.html">Sign In</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
